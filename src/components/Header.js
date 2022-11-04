@@ -1,5 +1,5 @@
-import { Navbar } from 'react-bootstrap/Navbar';
-import { Container } from 'react-bootstrap/Container';
+import { Navbar } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 export default function Header() {
     return (
