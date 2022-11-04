@@ -1,4 +1,8 @@
+import { useState } from 'react';
+import Spinner from 'react-bootstrap/Spinner';
+
 export default function Posts() {
+    // const [posts, setPosts] = useState();
     const posts = [
       {
         id: 1,
@@ -20,8 +24,8 @@ export default function Posts() {
   
     return (
       <>
-        {posts.length === 0 ?
-          <p>There are no blog posts.</p>
+        {posts === undefined ?
+          <Spinner animation="border" />
         :
           posts.map(post => {
             return (
